@@ -4,6 +4,11 @@
 #include <string>
 using namespace std;
 
-/* Type your code here */
+class ItemToPurchase{
+  public:
+    string SetName();
+    string GetName();
+};
+
 
 #endif
