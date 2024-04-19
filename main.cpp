@@ -41,10 +41,10 @@ int main() {
    itp2.SetQuantity(qty);
 
    cout << "TOTAL COST" << endl;
-   cout << itp.GetName(name) << itp.GetQuantity(qty) << "@" << itp.GetPrice(price) << "=" << itp.GetQuantity(qty)*itp.GetPrice(price) << endl;
-   cout << itp2.GetName(name) << itp2.GetQuantity(qty) << "@" << itp2.GetPrice(price) << "=" << itp2.GetQuantity(qty)*itp2.GetPrice(price) << endl;
+   cout << itp.GetName() << itp.GetQuantity() << "@" << itp.GetPrice() << "=" << itp.GetQuantity()*itp.GetPrice() << endl;
+   cout << itp2.GetName() << itp2.GetQuantity() << "@" << itp2.GetPrice() << "=" << itp2.GetQuantity()*itp2.GetPrice() << endl;
 
-   cout << "Total: " << (itp.GetQuantity(qty)*itp.GetPrice(price))+(itp2.GetQuantity(qty)*itp2.GetPrice(price)) << endl;
+   cout << "Total: " << (itp.GetQuantity()*itp.GetPrice())+(itp2.GetQuantity()*itp2.GetPrice()) << endl;
    
    return 0;
 }
