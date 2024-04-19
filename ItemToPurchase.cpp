@@ -15,3 +15,18 @@ void::ItemToPurchase::SetPrice(string price) {
 void::ItemToPurchase::SetQuantity(string qty) {
   itemQuantity = qty;
 }
+
+string ItemToPurchase::GetName(){
+  return itemName;
+}
+
+string ItemToPurchase::GetPrice(){
+  return itemPrice;
+}
+
+string ItemToPurchase::GetQuantity(){
+  return itemQuantity;
+}
+
+void ItemToPurchase::Print(){
+}
