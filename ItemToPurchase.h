@@ -5,9 +5,22 @@
 using namespace std;
 
 class ItemToPurchase{
+  private:
+  string itemName;
+  int itemPrice;
+  int itemQuantity;
+
   public:
-    string SetName();
-    string GetName();
+  ItemToPurchase();
+  void SetName(string name);
+  void SetPrice(int price);
+  void SetQuantity(int qty);
+
+  string GetName();
+  int GetPrice();
+  int GetQuantity();
+
+  void Print();
 };
 
 
