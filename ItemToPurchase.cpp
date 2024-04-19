@@ -27,6 +27,3 @@ string ItemToPurchase::GetPrice(){
 string ItemToPurchase::GetQuantity(){
   return itemQuantity;
 }
-
-void ItemToPurchase::Print(){
-}
