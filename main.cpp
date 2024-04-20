@@ -6,6 +6,7 @@ using namespace std;
 int main() {
    ItemToPurchase itp;
    ItemToPurchase itp2;
+   
    string name;
    int price;
    int qty;
@@ -13,7 +14,7 @@ int main() {
    // item 1
    cout << "Item 1" << endl;
    cout << "Enter the item name: " << endl;
-   cin >> name;
+   getline(cin, name);
    itp.SetName(name);
    
    cout << "Enter the item price: " << endl;
@@ -29,7 +30,8 @@ int main() {
    // item 2
    cout << "Item 2" << endl;
    cout << "Enter the item name: " << endl;
-   cin >> name;
+   cin.ignore();
+   getline(cin, name);
    itp2.SetName(name);
    
    cout << "Enter the item price: " << endl;
@@ -41,10 +43,10 @@ int main() {
    itp2.SetQuantity(qty);
 
    cout << "TOTAL COST" << endl;
-   cout << itp.GetName() << itp.GetQuantity() << "@" << itp.GetPrice() << "=" << itp.GetQuantity()*itp.GetPrice() << endl;
-   cout << itp2.GetName() << itp2.GetQuantity() << "@" << itp2.GetPrice() << "=" << itp2.GetQuantity()*itp2.GetPrice() << endl;
+   cout << itp.GetName() << " " << itp.GetQuantity() << " @ $" << itp.GetPrice() << " = $" << itp.GetQuantity()*itp.GetPrice() << endl;
+   cout << itp2.GetName() << " " << itp2.GetQuantity() << " @ $" << itp2.GetPrice() << " = $" << itp2.GetQuantity()*itp2.GetPrice() << endl;
 
-   cout << "Total: " << (itp.GetQuantity()*itp.GetPrice())+(itp2.GetQuantity()*itp2.GetPrice()) << endl;
+   cout << "Total: $" << (itp.GetQuantity()*itp.GetPrice())+(itp2.GetQuantity()*itp2.GetPrice()) << endl;
    
    return 0;
 }
