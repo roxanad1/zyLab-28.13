@@ -25,7 +25,6 @@ int main() {
    cin >> qty;
    itp.SetQuantity(qty);
 
-   cin.ignore();
    
    // item 2
    cout << "Item 2" << endl;
