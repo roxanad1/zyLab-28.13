@@ -29,6 +29,3 @@ int ItemToPurchase::GetPrice(){
 int ItemToPurchase::GetQuantity(){
   return itemQuantity;
 }
-
-void ItemToPurchase::Print(){
-}
