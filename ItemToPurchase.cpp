@@ -3,16 +3,18 @@ using namespace std;
 
 #include "ItemToPurchase.h"
 
-/* Type your code here */
-void::ItemToPurchase::SetName(string name) {
+ItemToPurchase::ItemToPurchase(){
+}
+
+void ItemToPurchase::SetName(string name) {
   itemName = name;
 }
 
-void::ItemToPurchase::SetPrice(string price) {
+void ItemToPurchase::SetPrice(int price) {
   itemPrice = price;
 }
 
-void::ItemToPurchase::SetQuantity(string qty) {
+void ItemToPurchase::SetQuantity(int qty) {
   itemQuantity = qty;
 }
 
@@ -20,10 +22,10 @@ string ItemToPurchase::GetName(){
   return itemName;
 }
 
-string ItemToPurchase::GetPrice(){
+int ItemToPurchase::GetPrice(){
   return itemPrice;
 }
 
-string ItemToPurchase::GetQuantity(){
+int ItemToPurchase::GetQuantity(){
   return itemQuantity;
 }
